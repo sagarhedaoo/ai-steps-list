@@ -27,23 +27,23 @@ const CreateQuery = ({ onSearchComplete }: CreateQueryProps) => {
 
     onSearchComplete(finalResult);
 
-    await animate("#target", { y: 0 }, { duration: 0.2 });
+    await animate("#target", { y: 0 });
   };
 
   return (
-    <div ref={scope} className=" flex justify-center items-center  px-5">
+    <div ref={scope} className=" flex justify-center items-center py-4 px-5">
       <div
         id="target"
-        className="w-[700px] flex items-center gap-5 justify-center"
+        className="w-[900px] flex items-center gap-5 justify-center"
       >
         <input
           type="text"
-          className="py-3 px-4 w-full border-black border rounded-lg text-sm"
+          className="py-6 px-6 w-full border-black border rounded-lg text-2xl"
           placeholder="Ask AI"
           onChange={(e) => setUserInput(e.target.value)}
         />
         <button className="cursor-pointer" onClick={() => handleSearchClick()}>
-          <Search className="hover:text-blue-500" />
+          <Search className="hover:text-blue-500 w-12 h-12" />
         </button>
       </div>
     </div>
