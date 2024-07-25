@@ -10,7 +10,7 @@ interface CreateQueryProps {
 }
 
 const PROMPT =
-  ", On the basis of description please give me response in json format that how do i complete the given task from step 1 to the end with title and description. The title should have what to do and the description should tell how to complete the task in the title. If the description is long, then make it in points. Dont write step number";
+  ", On the basis of description please give me response in json format that how do i complete the given task from step 1 to the end with title and description. The title should have what to do and the description should tell how to complete the task in the title. If the description is long, then make it in points. Start json with step";
 
 const CreateQuery = ({ onSearchComplete }: CreateQueryProps) => {
   const [userInput, setUserInput] = useState<string>("");
