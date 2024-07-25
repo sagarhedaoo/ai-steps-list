@@ -1,36 +1,16 @@
 {
-  "steps": [
+  "step": [
     {
-      "title": "Download and Install VS Code",
-      "description": "- Visit the official VS Code website: https://code.visualstudio.com/\n- Click on the \"Download for Windows\", \"Download for macOS\", or \"Download for Linux\" button based on your operating system.\n- Run the downloaded installer and follow the on-screen instructions to complete the installation."
+      "title": "Rinse and Sort Beans",
+      "description": "Rinse the pinto beans thoroughly in a colander under cold running water. Remove any debris or discolored beans."
     },
     {
-      "title": "Open VS Code",
-      "description": "Find the VS Code icon on your computer's desktop or start menu and launch it."
-    },
-    {
-      "title": "Explore the User Interface",
-      "description": "- **Title Bar:** Displays the name of the current file or folder you are working on.\n- **Menu Bar:** Contains options for file management, editing, and more.\n- **Activity Bar:** Provides access to various features like extensions, source control, and debugging.\n- **Editor Area:** The main workspace where you write and edit your code.\n- **Sidebar:** Displays the project explorer, file explorer, and search results.\n- **Status Bar:** Shows information about the current file, such as line and column numbers, encoding, and language mode."
-    },
-    {
-      "title": "Create a New Project",
-      "description": "- Click on \"File\" > \"New File\" or press \"Ctrl+N\" (Windows/Linux) or \"Cmd+N\" (macOS) to create a new empty file.\n- Save the file by clicking on \"File\" > \"Save\" or pressing \"Ctrl+S\" (Windows/Linux) or \"Cmd+S\" (macOS). Choose a suitable name and location for your project."
-    },
-    {
-      "title": "Write Code",
-      "description": "Start typing your code directly in the editor area. VS Code provides syntax highlighting, auto-completion, and other features to assist you in writing code."
-    },
-    {
-      "title": "Install Extensions",
-      "description": "- Extensions enhance VS Code's capabilities. To install extensions, click on the \"Extensions\" icon in the Activity Bar.\n- Search for the desired extensions in the search bar and click on the \"Install\" button.\n- Restart VS Code for the extensions to take effect."
-    },
-    {
-      "title": "Run and Debug Code",
-      "description": "- **Run Code:** Depending on the programming language you are using, VS Code may have built-in support for running your code. Look for options like \"Run\" or \"Debug\" in the menu bar or the Activity Bar.\n- **Debug Code:** Use the debugger to step through your code line by line, inspect variables, and identify any errors."
-    },
-    {
-      "title": "Customize VS Code",
-      "description": "- **Themes:** Change the appearance of VS Code by selecting different color themes.\n- **Settings:** Configure VS Code's behavior and preferences, such as editor font, font size, and language settings.\n- **Keyboard Shortcuts:** Customize keyboard shortcuts for common tasks."
+      "title": "Soak Beans",
+      "description": [
+        "Place the beans in a large pot or bowl.",
+        "Cover them with plenty of fresh water, at least 2 inches above the beans.",
+        "Soak the beans overnight or for at least 6 hours. This helps soften the beans and reduces cooking time."
+      ]
     }
   ]
 }
