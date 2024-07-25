@@ -1,5 +1,10 @@
 import Image from "next/image";
+import Hero from "./_components/Hero";
 
 export default function Home() {
-  return <div className="text-purple-600">Hello World</div>;
+  return (
+    <div>
+      <Hero />
+    </div>
+  );
 }
