@@ -1,5 +1,5 @@
 "use client";
-import { Check, ChevronRight, Cross } from "lucide-react";
+import { Check, ChevronRight, Cross, Divide } from "lucide-react";
 import React, { ReactNode, useState } from "react";
 
 interface ShowResultsProps {
@@ -11,10 +11,17 @@ const ShowResults: React.FC<ShowResultsProps> = ({ response }) => {
   const [completedSteps, setCompletedSteps] = useState<{
     [key: number]: boolean;
   }>({});
-  if (!response) return <div></div>;
 
-  const task = JSON.parse(String(response));
-  console.log(task);
+  let task;
+
+  try {
+    task = JSON.parse(String(response));
+  } catch {
+    console.error("Failed to parse JSON response");
+    return <div>Try Again</div>;
+  }
+
+  // console.log(task);
 
   const toggleStep = (index: number) => {
     setOpenSteps((prevOpenSteps) => ({
@@ -35,7 +42,9 @@ const ShowResults: React.FC<ShowResultsProps> = ({ response }) => {
       {task.step.map((step: any, index: number) => (
         <div
           key={index}
-          className="border  border-black px-4 py-4 mb-3 rounded-lg"
+          className={`border px-4 py-4 mb-3 rounded-lg ${
+            completedSteps[index] ? "border-green-600" : "border-black"
+          }  `}
         >
           <div className="flex justify-between items-center">
             <div className="flex justify-center items-center gap-2">
@@ -64,7 +73,17 @@ const ShowResults: React.FC<ShowResultsProps> = ({ response }) => {
               />
             </div>
           </div>
-          {openSteps[index] && <div className="mt-2">{step.description}</div>}
+          {openSteps[index] && (
+            <div
+              className={`mt-2 ${
+                completedSteps[index]
+                  ? "line-through decoration-green-500 decoration-2"
+                  : ""
+              } `}
+            >
+              {step.description}
+            </div>
+          )}
         </div>
       ))}
     </div>
