@@ -1,7 +1,6 @@
 import React from "react";
 
 const CreateListLayout = ({ children }: { children: React.ReactNode }) => {
-  // const { imageUrl } = useImage();
   return (
     <div>
       <div
